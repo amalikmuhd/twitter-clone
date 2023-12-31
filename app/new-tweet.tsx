@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Image, Pressable, StyleSheet, Text, TextInput, View, SafeAreaView } from 'react-native';
+import { Image, Pressable, StyleSheet, Text, TextInput, View, SafeAreaView, Platform } from 'react-native';
 import { Link, router } from 'expo-router';
 
 const user = {
@@ -18,7 +18,7 @@ export default function NewTweet() {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: 'white', paddingTop: Platform.OS === 'android' ? 25 : 0 }}>
       <View style={styles.container}>
         <View style={styles.buttonContainer}>
           <Link href={'../'} style={{ fontSize: 18 }}>
