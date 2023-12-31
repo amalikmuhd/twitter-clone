@@ -1,7 +1,7 @@
 import { Text } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
-import Tweet from '../../components/Tweet';
-import tweets from '../../assets/data/tweets';
+import Tweet from '../../../../../components/Tweet';
+import tweets from '../../../../../assets/data/tweets';
 export default function TweetScreen() {
   const { id } = useLocalSearchParams();
 

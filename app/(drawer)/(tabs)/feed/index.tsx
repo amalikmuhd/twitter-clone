@@ -1,8 +1,8 @@
 import { FlatList, Pressable, StyleSheet } from 'react-native';
-import EditScreenInfo from '../../../components/EditScreenInfo';
-import { Text, View } from '../../../components/Themed';
-import Tweet from '../../../components/Tweet';
-import tweets from '../../../assets/data/tweets';
+import EditScreenInfo from '../../../../components/EditScreenInfo';
+import { Text, View } from '../../../../components/Themed';
+import Tweet from '../../../../components/Tweet';
+import tweets from '../../../../assets/data/tweets';
 import { Entypo } from '@expo/vector-icons';
 import { Link } from 'expo-router';
 export default function TabOneScreen() {
